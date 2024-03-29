@@ -23,8 +23,8 @@ ID_DISAPPEAR_THRESHOLD = 15.0
 NUM_JITTERS = 0
 # LOG_FILENAME = f"../team_anoosha/Threading/logs/{FILENAME}_t1.log"
 # VIDEO_PATH = 2
-VIDEO_PATH = f'usecases/{FILENAME}.mp4'
-OUTPUT_PATH = f'usecases/output/{FILENAME}_tol_{FACE_RECOGNITION_TOLERANCE}_{TIME_THRESHOLD}sec.avi'
+VIDEO_PATH = f'{FILENAME}.mp4'
+OUTPUT_PATH = f'{FILENAME}_tol_{FACE_RECOGNITION_TOLERANCE}_{TIME_THRESHOLD}sec.avi'
 FOURCC = cv2.VideoWriter_fourcc(*'XVID')
 JWT_TOKEN = "yJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCQUxGIiwic3ViIjoiSldUIFRva2VuIiwidXNlcm5hbWUiOiJtZWhyQGdtYWlsLmNvbSIsImF1dGhvcml0aWVzIjoiQ1JFQVRFX1VTRVIsVklFVyIsImlhdCI6MTcwODU3NjMyMCwiZXhwIjoxNzM0ODQxOTIwfQ.tb5RjpQe0tEfBbXuPmXLrHHAccSFJqlXga4SAxE56sU"
 API_BASE_URL = 'http://13.126.160.174:5000'
@@ -37,7 +37,7 @@ HEADERS = {
 
 # Set up logging
 logging.basicConfig(
-    filename=f"usecases/{FILENAME}.log",
+    filename=f"{FILENAME}.log",
     filemode="w",
     level=logging.DEBUG,
     format="%(asctime)s - %(levelname)s - %(message)s",
