@@ -15,7 +15,7 @@ ip_address = '192.168.6.15'
 # url = f"rtsp://{username}:{password}@{ip_address}:554/cam/realmonitor?channel=1&subtype=1"
 
 # FILENAME = "web_cam"
-FILENAME = "data"
+FILENAME = "customer_data"
 CONFIDENCE_THRESHOLD = 0.90
 FACE_RECOGNITION_TOLERANCE = 0.50
 TIME_THRESHOLD = 15.0
@@ -23,10 +23,10 @@ ID_DISAPPEAR_THRESHOLD = 15.0
 NUM_JITTERS = 0
 # LOG_FILENAME = f"../team_anoosha/Threading/logs/{FILENAME}_t1.log"
 # VIDEO_PATH = 2
-VIDEO_PATH = f'../customer_waiting_time/video/{FILENAME}.mp4'
-OUTPUT_PATH = f'../customer_waiting_time/video/output/{FILENAME}_tol_{FACE_RECOGNITION_TOLERANCE}_{TIME_THRESHOLD}sec.avi'
+VIDEO_PATH = f'usecases/{FILENAME}.mp4'
+OUTPUT_PATH = f'usecases/output/{FILENAME}_tol_{FACE_RECOGNITION_TOLERANCE}_{TIME_THRESHOLD}sec.avi'
 FOURCC = cv2.VideoWriter_fourcc(*'XVID')
-JWT_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCQUxGIiwic3ViIjoiSldUIFRva2VuIiwidXNlcm5hbWUiOiJtZWhyQGdtYWlsLmNvbSIsImF1dGhvcml0aWVzIjoiQ1JFQVRFX1VTRVIsVklFVyIsImlhdCI6MTcwODU3NjMyMCwiZXhwIjoxNzM0ODQxOTIwfQ.tb5RjpQe0tEfBbXuPmXLrHHAccSFJqlXga4SAxE56sU"
+JWT_TOKEN = "yJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJCQUxGIiwic3ViIjoiSldUIFRva2VuIiwidXNlcm5hbWUiOiJtZWhyQGdtYWlsLmNvbSIsImF1dGhvcml0aWVzIjoiQ1JFQVRFX1VTRVIsVklFVyIsImlhdCI6MTcwODU3NjMyMCwiZXhwIjoxNzM0ODQxOTIwfQ.tb5RjpQe0tEfBbXuPmXLrHHAccSFJqlXga4SAxE56sU"
 API_BASE_URL = 'http://13.126.160.174:5000'
 HEADERS = {
     "Content-Type": "application/json",
@@ -37,7 +37,7 @@ HEADERS = {
 
 # Set up logging
 logging.basicConfig(
-    filename=f"/home/zubair/Xloop/bafl/face_recognition/customer_waiting_time/logs/{FILENAME}.log",
+    filename=f"usecases/{FILENAME}.log",
     filemode="w",
     level=logging.DEBUG,
     format="%(asctime)s - %(levelname)s - %(message)s",
