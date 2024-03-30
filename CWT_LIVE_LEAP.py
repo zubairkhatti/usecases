@@ -310,9 +310,9 @@ def main():
             check_and_generate_alerts()
             
             out.write(frame)
-            cv2.imshow(f'{FILENAME}_{FACE_RECOGNITION_TOLERANCE}_tolerance_{TIME_THRESHOLD}sec', frame)
-            if cv2.waitKey(1) & 0xFF == ord('q'):
-                break
+            # cv2.imshow(f'{FILENAME}_{FACE_RECOGNITION_TOLERANCE}_tolerance_{TIME_THRESHOLD}sec', frame)
+            # if cv2.waitKey(1) & 0xFF == ord('q'):
+            #     break
         video_capture.release()
         out.release()
         cv2.destroyAllWindows()
